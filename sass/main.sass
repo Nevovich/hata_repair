@@ -1,9 +1,10 @@
-@import _colors.sass
-@import _fonts.sass
+@import colors
+@import fonts
 
 
 body
     font-family: 'MuseoSans', sans-serif
+    color: $black
 a
     color: $black
 header 
@@ -30,5 +31,45 @@ header
             font-size: 12px  
             padding: 15px 26px
             border-radius: 5px
+.hero
+    background-color: $back-gray
+    padding-top: 50px
+    padding-bottom: 54px
+    &-content
+        &__title
+            margin-bottom: 30px
+            font-weight: 700
+        &__subtitle
+            &_bold
+                font-weight: bold
+                display: block
+                margin-bottom: 50px
+    &-list
+        &__image
+            border: 2px solid $orange
+            border-radius: 50%
+            &_small
+                padding: 8px
+                margin-right: 30px
+        &__item
+            padding: 15px 0
+            &_text
+                line-height: 20px
+                margin: 0
+                font-size: 14px
+                max-width: 300px
+    &-image
+        margin-top: 40px
 
-@import _media.sass
+
+
+
+
+
+
+
+
+
+
+
+@import media
