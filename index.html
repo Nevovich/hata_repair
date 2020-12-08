@@ -18,7 +18,7 @@
                         <a href="tel:+74954225131
                         "><strong>+7 (495) 42-251-31</strong></a>
                     </div>
-                    <button class="btn btn-yellow header-contact-btn">Перезвоните мне</button>
+                    <button class="btn btn-yellow header-contact-btn" data-toggle="modal" data-target="#Modal_toilets">Перезвоните мне</button>
                 </div>
             </div>
         </div>
@@ -60,18 +60,146 @@
                         </p>
                         <div class="form-row justify-content-between offer-form__input-block">
                             <input type="text" class="col-12 col-md-5 form-input form-control" placeholder="Имя">
-                            <input type="text" class="col-12 col-md-5 form-input form-control" placeholder="Фамилия">
+                            <input type="text" class="col-12 col-md-6 form-input form-control" placeholder="Фамилия">
                         </div>
                         <button class="btn btn-yellow form_btn col-12">Получить бесплатный дизайн-проект
                         </button>
                         <div class="form-help d-flex justify-content-between">
                             <p style="padding-right: 2%;" class="text form-help_text">Наш менеджер перезвонит Вам в течение 60 секунд</p>
-                            <p class="text form-help_text">или перезвоните нам сами <br><a href="tel:+74954225131"><strong>+7 (495) 42-251-31</strong></a></p>
+                            <p class="text form-help_text">или перезвоните нам сами <br><a href="tel:+74954225131"><a href="#">+7 (495) 42-251-31</a></a></p>
                         </div>
                     </form>
                 </div>
             </div>
         </section>
     </main>
+  <!-- Modal -->
+  <!-- Modal about toilets repair -->
+  <div class="modal fade" id="Modal_toilets" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row">
+              <!-- Modal left-sided content -->
+              <div class="modal-left col-12 col-lg-6">
+                  <div class="features-block">
+                    <div class="horizontal-card d-flex">
+                        <img src="img/modal-img/bathroom.jpg" alt="ванная" class="modal-card__image">
+                        <div class="features-content d-flex flex-column justify-content-center">
+                            <span class="v-d-title modal-card__title">Ванная комната</span>
+                            <p class="text m-0">135*150 - <b>31 000 руб.</b><br>170*170 - <b>43 000 руб.</b></p>
+                        </div>
+                    </div>
+                    <div class="horizontal-card d-flex">
+                        <img src="img/modal-img/toilet.jpg" alt="Туалет" class="modal-card__image">
+                        <div class="features-content d-flex flex-column justify-content-center">
+                            <span class="features-title modal-card__title">Туалет</span>
+                            <p class="text m-0">135*70 - <b>14 000 руб.</b></p>
+                        </div>
+                    </div>
+                    <div class="horizontal-card d-flex ">
+                        <img src="img/modal-img/complex-bathroom.jpg" alt="Совмещённый санузел" class="modal-card__image">
+                        <div class="features-content d-flex flex-column justify-content-center">
+                            <span class="features-title modal-card__title">Совмещённый санузел</span>
+                            <p class="text m-0">170*210 - <b>54 000 руб.</b></p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="">
+                      <span><b>В стоимость работ входит</b></span>
+                      <ul class="modal-list">
+                          <li>Демонтаж старого покрытия стен и пола</li>
+                          <li>Выравнивание стен гипсовыми составами</li>
+                          <li>Грунтовка стен и пола антисептиком, бетоноконтактом</li>
+                          <li>Монтаж кафельной плитки на полу и стенах</li>
+                          <li>Установка реечного или натяжного потолка, светильников</li>
+                          <li>Монтаж двери с коробкой</li>
+                      </ul>
+                  </div>
+              </div>
+              <!-- Modal right-sided form -->
+              <div class="form-modal__wrapper col-12 col-lg-6">
+                    <form action="#" class="form-modal mx-auto">
+                        <h3 class="section-title section-title_modal">Узнайте точную стоимость <br> ремонта по телефону!</h3>
+                        <span class="form-modal_subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
+                        <input style="margin-top: 50px; margin-bottom: 15px;" type="text" class="form-control form-input" placeholder="Ваше имя">
+                        <input type="text" class="form-control form-input" placeholder="Ваш телефон">
+                        <button class="btn btn-yellow form_btn col-12">Узнать стоимость</button>
+                        <div class="form-help">
+                            <p class="text">или перезвоните нам сами по телефону:<br><a href="tel:+74954225131" class="phone">+7 (495) 42-251-31</a></p>
+                        </div>
+                    </form>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal about flats repair  !Кнопка вызова не назначена! -->
+  <div class="modal fade" id="Modal_flats" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-body modal-body_big">
+          <div class="row">
+              <!-- Modal left-sided content -->
+              <div class="modal-left col-12 col-lg-6">
+                  <div class="features-block">
+                    <div class="horizontal-card d-flex">
+                        <img src="img/modal-img/12m_pic.jpg" alt="ванная" class="modal-card__image">
+                        <div class="features-content d-flex flex-column justify-content-center">
+                            <p class="text m-0">12 м<sup>2</sup> - <b>36 000 руб.</b></p>
+                        </div>
+                    </div>
+                    <div class="horizontal-card d-flex">
+                        <img src="img/modal-img/16m_pic.jpg" alt="Туалет" class="modal-card__image">
+                        <div class="features-content d-flex flex-column justify-content-center">
+                            <p class="text m-0">16 м<sup>2</sup> - <b>48 000 руб.</b></p>
+                        </div>
+                    </div>
+                    <div class="horizontal-card d-flex ">
+                        <img src="img/modal-img/20m_pic.jpg" alt="Совмещённый санузел" class="modal-card__image">
+                        <div class="features-content d-flex flex-column justify-content-center">
+                            <p class="text m-0">20 м<sup>2</sup> - <b>60 000 руб.</b></p>
+                        </div>
+                    </div>
+                  </div>
+                  <div>
+                      <span><b>В стоимость работ входит</b></span>
+                      <ul class="modal-list">
+                            <li>Снятие верхнего слоя покрытия с потолка, стен и пола</li>
+                            <li>Подготовка оконного откоса</li>
+                            <li>Выравнивание стен гипсовым составом</li>
+                            <li>Виниловое покрытие, шлифовка, грунтовка</li>
+                            <li>Поклейка обоев и покраска</li>
+                            <li>Выравнивание потолка гипсовым составом</li>
+                            <li>Оклейка потолка потолочными обоями или его покраска</li>
+                            <li>Натяжной, тканевый или парящий потолок</li>
+                            <li>Протяжка пола, покрытие паркетной доской, ламинатом или линолеумом</li>
+                            <li>Замена электророзеток</li>
+                      </ul>
+                  </div>
+              </div>
+              <!-- Modal right-sided form -->
+              <div class="form-modal__wrapper col-12 col-lg-6">
+                    <form action="#" class="form-modal mx-auto">
+                        <h3 class="section-title section-title_modal">Узнайте точную стоимость <br> ремонта по телефону!</h3>
+                        <span class="form-modal_subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
+                        <input style="margin-top: 50px; margin-bottom: 15px;" type="text" class="form-control form-input" placeholder="Ваше имя">
+                        <input type="text" class="form-control form-input" placeholder="Ваш телефон">
+                        <button class="btn btn-yellow form_btn col-12">Узнать стоимость</button>
+                        <div class="form-help">
+                            <p class="text">или перезвоните нам сами по телефону:<br><a href="tel:+74954225131" class="phone">+7 (495) 42-251-31</a></p>
+                        </div>
+                    </form>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -11,6 +11,9 @@ a
     font-size: 16px
 header 
     padding: 20px 0
+.phone
+    font-weight: 700
+    font-size: 24px
 .header
     &-logo
         height: 75px
@@ -38,7 +41,11 @@ header
         background-color: $orange
         &:hover
             background-color: darken($orange, 5%)
-
+.section-title
+    font-weight: 700
+    &_modal
+        font-size: 22px
+        margin-bottom: 0px
 .hero
     background-color: $back-gray
     padding-top: 50px
@@ -74,7 +81,7 @@ header
         box-shadow: 25px 17px 49px 0px rgba(0, 0, 0, 0.1)
 
 .offer
-    background-color: #fff
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6))
     &-form
          
 .form
@@ -95,6 +102,13 @@ header
         margin-top: 30px
         &_text
             width: 100%
+    &-modal
+        max-width: 370px
+        width: 95%
+        text-align: center
+        background-color: #fff
+        &_subtitle
+            font-size: 16px
             
 
 
@@ -105,5 +119,44 @@ header
 
 
 
-
+.modal
+    &-body
+        padding: 75px 70px
+        &_big
+            padding-bottom: 50px
+            padding-top: 60px
+    &-card
+        &__title
+            font-weight: 700
+            &:after
+                content: ''
+                background-color: $orange
+                width: 42px
+                height: 2px
+                display: block
+                margin: 13px 0
+        &__image
+            height: 85px
+            width: 120px
+            padding-right: 25px
+    &-list
+        padding-inline-start: 20px
+        list-style: none
+    & li:before
+        content: "\2022"
+        color: $orange
+        font-size: 22px
+        font-weight: bold
+        display: inline-block;
+        width: 1em
+        margin-left: -1em     
+.features
+    &-block
+        margin-bottom: 50px
+    &-content
+        height: 85px
+.horizontal-card
+    margin-top: 30px
+    &:first-child
+        margin-top: 0
 @import media
