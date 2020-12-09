@@ -40,12 +40,15 @@ header
         background-color: $orange
         &:hover
             background-color: darken($orange, 5%)
-.section-title
-    font-weight: 700
-    font-size: 30px
-    padding-top: 40px
+.section
+    &-title
+        font-weight: 700
+        font-size: 30px
+        padding-top: 40px
+    &-subtitle
+        margin-top: 30px
+        font-size: 20px
     &_form
-        margin-top: 0
         font-weight: 700
     &_modal
         font-size: 22px
@@ -116,7 +119,6 @@ header
 .portfolio
     &-section
         background: $back-gray
-        text-align: center
     &-image
         max-width: 370px
         height: 280px
@@ -136,7 +138,88 @@ header
         outline: 0 !important
         &-image
             padding-left: 15px
-
+.sales-section
+    padding-bottom: 30px
+.card
+    transition: 1s
+    &:hover
+        border-color: rgba(255, 255, 255, 0)
+        box-shadow: 0px 20px 25px 0px rgba(0, 0, 0, 0.1)
+    &__sales
+        margin-top: 30px
+    &-img-top
+        background-repeat: no-repeat
+    &-title
+        font-size: 18px
+    &-link
+        display: inline-block
+        position: relative
+        text-decoration: none
+        &:before, &:after
+            display: block
+            position: absolute
+            content: ""
+            height: 6px
+            width: 0
+            background-color: $orange
+            bottom: 0
+            z-index: 0
+        &:before
+            transition: width 1s ease-in-out, left .5s ease-in-out
+            right: 50%
+        &:after
+            transition: width 1s ease-in-out
+            left: 50%
+        &:hover
+            color: $black
+            &:before
+                width: 50%
+                left: 0
+            &:after
+                width: 50%
+#sale-block__card_img
+    &-bath
+        height: 260px
+        background: url(../img/sales/bathroom.jpg) center center
+        background-repeat: no-repeat
+        &:hover
+            background: linear-gradient( 0deg, $orange 0%, rgba(255,255,255,0) 100%), url(../img/sales/bathroom.jpg) center center
+            background-repeat: no-repeat
+    &-bed
+        height: 260px
+        background: url(../img/sales/bedroom.jpg) center center
+        background-repeat: no-repeat
+        &:hover
+            background: linear-gradient( 0deg, $orange 0%, rgba(255,255,255,0) 100%), url(../img/sales/bedroom.jpg) center center
+            background-repeat: no-repeat
+    &-office
+        height: 260px
+        background: url(../img/sales/office.jpg) center center
+        background-repeat: no-repeat
+        &:hover
+            background: linear-gradient( 0deg, $orange 0%, rgba(255,255,255,0) 100%), url(../img/sales/office.jpg) center center
+            background-repeat: no-repeat
+    &-new-build
+        height: 260px
+        background: url(../img/sales/new-build.jpg) center center
+        background-repeat: no-repeat
+        &:hover
+            background: linear-gradient( 0deg, $orange 0%, rgba(255,255,255,0) 100%), url(../img/sales/new-build.jpg) center center
+            background-repeat: no-repeat
+    &-kitchen
+        height: 260px
+        background: url(../img/sales/kitchen.jpg) center center
+        background-repeat: no-repeat
+        &:hover
+            background: linear-gradient( 0deg, $orange 0%, rgba(255,255,255,0) 100%), url(../img/sales/kitchen.jpg) center center
+            background-repeat: no-repeat
+    &-mansarda
+        height: 260px
+        background: url(../img/sales/mansarda.jpg) center center
+        background-repeat: no-repeat
+        &:hover
+            background: linear-gradient( 0deg, $orange 0%, rgba(255,255,255,0) 100%), url(../img/sales/mansarda.jpg) center center
+            background-repeat: no-repeat
 
 
 
