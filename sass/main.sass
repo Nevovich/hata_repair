@@ -9,6 +9,7 @@ a
     color: $black
 .text
     font-size: 16px
+    margin-block-end: 0
 header 
     padding: 20px 0
 .phone
@@ -45,7 +46,10 @@ header
         font-weight: 700
         font-size: 30px
         padding-top: 40px
+        &_modal
+            padding-top: 0  !important 
     &-subtitle
+        display: block
         margin-top: 30px
         font-size: 20px
     &_form
@@ -68,6 +72,7 @@ header
                 margin-bottom: 50px
     &-list
         &__image
+            display: flex
             border: 2px solid $orange
             border-radius: 50%
             &_small
@@ -89,7 +94,14 @@ header
 
 .offer
     background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6))
-    &-form  
+    position: relative
+    &::before
+        content: ''
+        width: 50%
+        height: 100%
+        background-color: rgba(255, 255, 255, 1)
+        position: absolute
+    &-form
 .form
     &_btn
         padding: 15px 0
@@ -97,6 +109,7 @@ header
     &-wrapper
         padding-top: 85px
         padding-bottom: 65px
+        position: relative
     &-input
         padding: 26px !important
         border-radius: 10px
@@ -113,7 +126,6 @@ header
         max-width: 370px
         width: 95%
         text-align: center
-        background-color: #fff
         &_subtitle
             font-size: 16px
 .portfolio
@@ -155,7 +167,7 @@ header
         display: inline-block
         position: relative
         text-decoration: none
-        &:before, &:after
+        &:before
             display: block
             position: absolute
             content: ""
@@ -166,17 +178,11 @@ header
             z-index: 0
         &:before
             transition: width 1s ease-in-out, left .5s ease-in-out
-            right: 50%
-        &:after
-            transition: width 1s ease-in-out
-            left: 50%
         &:hover
             color: $black
             &:before
-                width: 50%
-                left: 0
-            &:after
-                width: 50%
+                width: 100%
+                right: 0
 #sale-block__card_img
     &-bath
         height: 260px
@@ -220,6 +226,107 @@ header
         &:hover
             background: linear-gradient( 0deg, $orange 0%, rgba(255,255,255,0) 100%), url(../img/sales/mansarda.jpg) center center
             background-repeat: no-repeat
+.steps
+    &__row
+        margin-top: 65px
+        padding-bottom: 60px
+    &__item
+        // max-width: 146px
+        position: relative
+        margin-top: 30px
+        &-after:after
+            content: url(../img/steps-img/arrow.png)
+            position: absolute
+            display: none
+            top: -11%
+            right: -32%
+        &-image
+            & img
+                padding: 28px
+            display: inline-block
+            border: 3px solid $orange
+            border-radius: 100%
+        &-text
+            padding-top: 30px
+            max-width: 135px
+            margin-left: auto
+            margin-right: auto
+.sale
+    &-feature
+        &__row
+            margin-top: 60px
+            padding-bottom: 35px
+        &-text
+            background-color: $orange
+            padding: 70px 0
+        &-card
+            background-color: $back-gray
+            justify-content: space-between
+            margin-bottom: 30px
+            & p
+                padding: 25px
+            & img
+                object-fit: cover
+                object-position: top
+    &_text
+        font-size: 32px
+.document
+    &-section
+        padding-top: 90px
+    &-card
+        width: 270px
+        &__image
+            background-color: $back-gray
+            & img
+                margin: 20px
+        &__desc
+            margin-top: 35px
+.brief
+    padding: 40px 0
+    position: relative
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../img/brif/brif-bg.jpg) bottom right no-repeat
+    background-size: cover
+    &::before
+        content: ''
+        background-color: $orange
+        width: 100%
+        height: 49%
+        position: absolute
+        top: 0
+        left: 0
+    &__title
+        font-size: 22px
+        padding-top: 0 !important
+    &__subtitle
+        display: block
+        font-size: 16px
+        margin-top: 35px
+        margin-bottom: 80px
+.interview
+    &-block
+        position: relative
+        height: 100%
+    &-list
+        padding-inline-start: 0
+        &__item
+            list-style-type: none
+            margin-bottom: 26px
+            display: flex
+            &:last-child
+                margin-bottom: 0
+        &__text
+            margin-left: 10px
+            display: block
+            align-self: center
+        &__counter
+            display: table !important
+            border: 2px solid $black
+            padding: 4px 10px
+.input-error-msg
+    display: block
+    font-size: 16px
+
+
 
 
 

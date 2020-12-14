@@ -18,9 +18,29 @@
         &-title
             padding-top: 100px
         &-subtitle
-            display: block
             margin-top: 60px
             padding-bottom: 20px
+    .steps
+        &__row
+            padding-bottom: 80px
+        &__item
+            margin-top: 0px
+            &-after:after
+                display: block
+            &-text
+                max-width: 160px
+                // display: inline
+                // margin-left: auto
+                // margin-right: auto
+    .sale
+        &-feature
+            &-text
+                padding: 80px 0 70px
+    .brief
+        padding: 100px 0
+        &::before
+            width: 50%
+            height: 100%
 @media (min-width: 992px)
     // lg
     .hero
@@ -32,7 +52,7 @@
         background-size: 50%
     .offer
         background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../img/kitchen-bg.jpg) no-repeat right
-        background-size: 50%
+        background-size: contain
     .section-title
         &_modal
             margin-bottom: 50px
@@ -45,5 +65,17 @@
             padding-bottom: 50px
     .sales-section
         padding-bottom: 60px
+    .sale
+        &-feature
+            &-card
+                margin: 0
+    .brief
+        background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../img/brif/brif-bg.jpg) right no-repeat
+        background-size: cover
+    .interview
+        &-list
+            &__text
+                margin-left: 30px
+                max-width: 400px
 @media (min-width: 1200px)
     // xl

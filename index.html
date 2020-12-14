@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -17,8 +18,7 @@
                 <div class="header-contact">
                     <div class="header-contact-mobile d-none d-md-inline-block">
                         <span>Калуга, Москва, МО</span>
-                        <a href="tel:+74954225131
-                        "><strong>+7 (495) 42-251-31</strong></a>
+                        <a href="tel:+74954225131"><strong>+7 (495) 42-251-31</strong></a>
                     </div>
                     <button class="btn btn-yellow header-contact-btn" data-toggle="modal" data-target="#Modal_toilets">Перезвоните мне</button>
                 </div>
@@ -34,18 +34,22 @@
                         <span class="hero-content__subtitle hero-content__subtitle_bold">с гарантией качества, прописанной в договоре</span>
                         <div class="hero-list">
                             <div data-wow-delay="0.2s" class="hero-list__item d-flex align-items-center wow fadeInLeft">
-                                <img src="img/hero-block/hero-image_alarm.svg" alt="alarm" class="hero-list__image hero-list__image_small">
+                                <div class="hero-list__image hero-list__image_small">
+                                    <img src="img/hero-block/hero-image_alarm.svg" alt="alarm">
+                                </div>
                                 <p class="text hero-list__item_text">Точно соблюдаем сроки</p>
                             </div>
                             <div data-wow-delay="0.4s" class="hero-list__item d-flex align-items-center wow fadeInLeft">
-                                <img src="img/hero-block/hero-image_calculator.svg" alt="calculator" class="hero-list__image hero-list__image_small">
-                                <p class="text hero-list__item_text">Рассчитаем смету на работы
-                                    и материалы в день обращения</p>
+                                <div class="hero-list__image hero-list__image_small">
+                                    <img src="img/hero-block/hero-image_calculator.svg" alt="calculator">
+                                </div>
+                                <p class="text hero-list__item_text">Рассчитаем смету на работы и материалы в день обращения</p>
                             </div>
                             <div data-wow-delay="0.6s" class="hero-list__item d-flex align-items-center wow fadeInLeft">
-                                <img src="img/hero-block/hero-image_paints.svg" alt="paints" class="hero-list__image hero-list__image_small">
-                                <p class="text hero-list__item_text">Предложим более 100 вариантов 
-                                    исполнения дизайна Вашего жилья</p>
+                                <div class="hero-list__image hero-list__image_small">
+                                    <img src="img/hero-block/hero-image_paints.svg" alt="paints">
+                                </div>
+                                <p class="text hero-list__item_text">Предложим более 100 вариантов исполнения дизайна Вашего жилья</p>
                             </div>
                         </div>
                     </div>
@@ -56,19 +60,19 @@
         <section class="offer">
             <div class="container">
                 <div class="row form-wrapper">
-                    <form class="col-12 col-lg-5">
+                    <form required action="#" method="POST" id="offer-form" class="col-12 col-lg-5">
                         <h3 class="section-title_form">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!</h3>
                         <p class="text">Оставьте заявку на разработку бесплатного дизайн-проекта!
                         </p>
                         <div class="form-row justify-content-between offer-form__input-block">
-                            <input type="text" class="col-12 col-md-5 form-input form-control" placeholder="Имя">
-                            <input type="text" class="col-12 col-md-6 form-input form-control" placeholder="Фамилия">
+                            <input required type="text" minlength="2" maxlength="15" name="username" class="col-12 col-md-5 form-input form-control" placeholder="Имя">
+                            <input required type="tel" name="userphone" class="phone-validate col-12 col-md-6 form-input form-control" placeholder="Телефон">
                         </div>
                         <button class="btn btn-yellow form_btn col-12">Получить бесплатный дизайн-проект
                         </button>
                         <div class="form-help d-flex justify-content-between">
                             <p style="padding-right: 2%;" class="text form-help_text">Наш менеджер перезвонит Вам в течение 60 секунд</p>
-                            <p class="text form-help_text">или перезвоните нам сами <br><a href="tel:+74954225131"><a href="#">+7 (495) 42-251-31</a></a></p>
+                            <p class="text form-help_text">или перезвоните нам сами <br><a href="tel:+74954225131">+7 (495) 42-251-31</a></p>
                         </div>
                     </form>
                 </div>
@@ -103,10 +107,11 @@
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-4">
                         <div data-wow-delay="0.2s" class="card card__sales wow fadeInDown">
-                            <div id="sale-block__card_img-bath" class="card-img-top"></div>
+                            <div id="sale-block__card_img-bath" class="card-img-top">
+                            </div>
                             <div class="card-body">
                               <span class="card-title d-block">Ремонт ванных комнат и с/у</span>
-                                <a href="#" class="font-weight-bold card-link">Узнать цену</a>
+                                <a href="#" class="font-weight-bold card-link" data-toggle="modal" data-target="#Modal_toilets">Узнать цену</a>
                             </div>
                           </div>
                     </div>
@@ -115,7 +120,7 @@
                             <div id="sale-block__card_img-bed" class="card-img-top"></div>
                             <div class="card-body">
                               <span class="card-title d-block">Ремонт комнат и квартир</span>
-                                <a href="#" class="font-weight-bold card-link">Узнать цену</a>
+                                <a href="#" class="font-weight-bold card-link" data-toggle="modal" data-target="#Modal_flats">Узнать цену</a>
                             </div>
                           </div>
                     </div>
@@ -129,7 +134,7 @@
                           </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div data-wow-delay="1.2s" class="card card__sales wow fadeInDown">
+                        <div data-wow-delay="0.6s" class="card card__sales wow fadeInDown">
                             <div id="sale-block__card_img-new-build" class="card-img-top"></div>
                             <div class="card-body">
                               <span class="card-title d-block">Ремонт в новостройках</span>
@@ -138,7 +143,7 @@
                           </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div data-wow-delay="1s" class="card card__sales wow fadeInDown">
+                        <div data-wow-delay="0.4s" class="card card__sales wow fadeInDown">
                             <div id="sale-block__card_img-kitchen" class="card-img-top"></div>
                             <div class="card-body">
                               <span class="card-title d-block">Ремонт кухонь</span>
@@ -147,13 +152,154 @@
                           </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div data-wow-delay="0.8s" class="card card__sales wow fadeInDown">
+                        <div data-wow-delay="0.2s" class="card card__sales wow fadeInDown">
                             <div id="sale-block__card_img-mansarda" class="card-img-top"></div>
                             <div class="card-body">
                               <span class="card-title d-block">Ремонт дач и коттеджей</span>
                                 <a href="#" class="font-weight-bold card-link">Узнать цену</a>
                             </div>
                           </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="steps-section text-center">
+            <div class="container">
+                <span class="section-title steps_title">Наши специалисты готовы выехать на замер <br> в любое удобное для Вас время</span>
+                <span class="section-subtitle">5 шагов до ремонта</span>
+                <div class="row justify-content-between steps__row">
+                    <div class="steps__item steps__item-after col-12 col-md-2">
+                        <div class="steps__item-image">
+                            <img src="img/steps-img/operator.svg" alt="Оператор">
+                        </div>
+                        <p class="text steps__item-text">Вы звоните нам или оставляете заявку</p>
+                    </div>
+                    <div class="steps__item steps__item-after col-12 col-md-2">
+                        <div class="steps__item-image">
+                            <img src="img/steps-img/watch.svg" alt="Часы">
+                        </div>
+                        <p class="text steps__item-text">Согласуем удобное для Вас время выезда специалиста на замер</p>
+                    </div>
+                    <div class="steps__item steps__item-after col-12 col-md-2">
+                        <div class="steps__item-image">
+                            <img style="transform: translateY(1px)" src="img/steps-img/coins.svg" alt="Бумага это деньги">
+                        </div>
+                        <p class="text steps__item-text">Рассчитываем смету согласовываем с Вами</p>
+                    </div>
+                    <div class="steps__item steps__item-after col-12 col-md-2">
+                        <div class="steps__item-image">
+                            <img src="img/steps-img/document.svg" alt="Договор">
+                        </div>
+                        <p class="text steps__item-text">Подписываем договор закупаем материал по оптовым ценам</p>
+                    </div>
+                    <div class="steps__item col-12 col-md-2">
+                        <div class="steps__item-image">
+                            <img src="img/steps-img/calendar.svg" alt="Календарь">
+                        </div>
+                        <p class="text steps__item-text">Выполняем ремонт в указанные сроки</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sale-feature-text text-center">
+            <div class="container">
+                <p class="text sale_text p-0">Ремонт обойдется Вам дешевле, так как <br> мы используем качественные материалы по оптовым ценам</p>
+            </div>
+        </section>
+        <section class="sale-feature-section">
+            <div class="container">
+                <div class="sale-feature__row row justify-content-md-center justify-content-lg-between">
+                    <div class="col-12 col-md-6 col-lg-4 d-flex">
+                        <div class="sale-feature-card card">
+                            <p class="text">Поможем закупить все материалы по <b>оптовым ценам</b> у проверенных поставщиков</p>
+                            <img src="img/sale-feature/1.png">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 d-flex">
+                        <div class="sale-feature-card card">
+                            <p class="text">Мы дадим Вам <b>максимальные скидки</b> у наших партнеров для закупки</p>
+                            <img src="img/sale-feature/2.png">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 d-flex">
+                        <div class="sale-feature-card card m-0">
+                        <p class="text">Все, что не сможете найти в городе - поможем заказать у <b>проверенных поставщиков</b></p>
+                        <img src="img/sale-feature/3.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="document-section">
+            <div class="container text-center">
+                <span class="section-title">Все наши гарантийные обязательства подробно и прозрачно описаны</span>
+                <div class="row sale-feature__row justify-content-md-center justify-content-lg-between">
+                    <div class="col-12 col-md-6 col-lg-4 d-flex mb-5 mb-lg-0">
+                        <div class="card document-card border-0 mx-auto mx-md-0">
+                            <div class="document-card__image">
+                                <img src="img/document/1.jpg" alt="Документ, страница 1">
+                            </div>
+                            <span class="document-card__desc">Гарантия на качество <br> выполняемых работ</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 d-flex mb-5 mb-lg-0">
+                        <div class="card document-card border-0 mx-auto mx-md-0">
+                            <div class="document-card__image">
+                                <img src="img/document/2.jpg" alt="Документ, страница 2">
+                            </div>
+                            <span class="document-card__desc">Гарантия на фиксированные цены<br>Виды работ и цены на них прописаны в договоре</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 d-flex mb-5 mb-lg-0">
+                        <div class="card document-card border-0 mx-auto mx-md-0">
+                            <div class="document-card__image">
+                                <img src="img/document/3.jpg" alt="Документ, страница 3">
+                            </div>
+                            <span class="document-card__desc">Гарантия на точное соблюдение сроков и ответственность за их невыполнение</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="brief">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 pb-md-0 interview-block__wrapper">
+                        <div class="interview-block d-flex justify-content-between flex-column">
+                            <span class="section-title brief__title ">Мы можем озвучить Вам примерную стоимость работы и материалов по телефону</span>
+                            <span class=" brief__subtitle">Для этого нужно ответить на 4 вопроса:</span>
+                            <ul class="interview-list">
+                                <li class="interview-list__item">
+                                    <span class="interview-list__counter rounded-circle">1.</span>
+                                    <span class="interview-list__text font-weight-bold">Какова площадь помещения?</span>
+                                </li>
+                                <li class="interview-list__item">
+                                    <span class="interview-list__counter rounded-circle">2.</span>
+                                    <span class="interview-list__text font-weight-bold">У Вас новостройка или вторичное жилье?</span>
+                                </li>
+                                <li class="interview-list__item">
+                                    <span class="interview-list__counter rounded-circle">3.</span>
+                                    <span class="interview-list__text font-weight-bold">Где находится помещение, в котором будет производиться ремонт?</span>
+                                </li>
+                                <li class="interview-list__item">
+                                    <span class="interview-list__counter rounded-circle">                                4.</span>
+                                    <span class="interview-list__text font-weight-bold">Назначение помещения</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mt-5 mt-md-0">
+                        <form action="#" id="brif-form" class="form-modal mx-auto">
+                            <h3 class="section-title section-title_modal">Оставьте заявку на бесплатный расчет ремонта по телефону </h3>
+                            <span class="form-modal_subtitle">Для этого заполните форму ниже </span>
+                            <input id="brif-name-input" required minlength="2" maxlength="15" style="margin-top: 50px; margin-bottom: 15px;" type="text" name="username" class="form-control form-input" placeholder="Ваше имя">
+                            <input type="email" required name="email" class="form-control form-input" placeholder="Ваш email">
+                            <input type="text" required class="form-control form-input phone-validate" name="userphone" placeholder="Ваш телефон">
+                            <button class="btn btn-yellow form_btn col-12">Рассчитать стоимость</button>
+                            <div class="form-help">
+                                <p class="text">Мы перезвоним вам в течение 60 секунд</p>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -204,12 +350,12 @@
                   </div>
               </div>
               <!-- Modal right-sided form -->
-              <div class="form-modal__wrapper col-12 col-lg-6">
+              <div class="form-modal__wrapper col-12 col-lg-6 mt-5">
                     <form action="#" class="form-modal mx-auto">
                         <h3 class="section-title section-title_modal">Узнайте точную стоимость <br> ремонта по телефону!</h3>
                         <span class="form-modal_subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
-                        <input style="margin-top: 50px; margin-bottom: 15px;" type="text" class="form-control form-input" placeholder="Ваше имя">
-                        <input type="text" class="form-control form-input" placeholder="Ваш телефон">
+                        <input style="margin-top: 50px; margin-bottom: 15px;" required type="text" minlength="2" maxlength="15" class="form-control form-input" placeholder="Ваше имя">
+                        <input type="text" class="phone-validate form-control form-input" placeholder="Ваш телефон">
                         <button class="btn btn-yellow form_btn col-12">Узнать стоимость</button>
                         <div class="form-help">
                             <p class="text">или перезвоните нам сами по телефону:<br><a href="tel:+74954225131" class="phone">+7 (495) 42-251-31</a></p>
@@ -221,7 +367,7 @@
       </div>
     </div>
   </div>
-  <!-- Modal about flats repair  !Кнопка вызова не назначена! -->
+  <!-- Modal about flats repair -->
   <div class="modal fade" id="Modal_flats" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
@@ -266,12 +412,12 @@
                   </div>
               </div>
               <!-- Modal right-sided form -->
-              <div class="form-modal__wrapper col-12 col-lg-6">
+              <div class="form-modal__wrapper col-12 col-lg-6 mt-5">
                     <form action="#" class="form-modal mx-auto">
                         <h3 class="section-title section-title_modal">Узнайте точную стоимость <br> ремонта по телефону!</h3>
                         <span class="form-modal_subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
-                        <input style="margin-top: 50px; margin-bottom: 15px;" type="text" class="form-control form-input" placeholder="Ваше имя">
-                        <input type="text" class="form-control form-input" placeholder="Ваш телефон">
+                        <input style="margin-top: 50px; margin-bottom: 15px;" required type="text" minlength="2" maxlength="15" class="form-control form-input" placeholder="Ваше имя">
+                        <input type="text" class="phone-validate form-control form-input" placeholder="Ваш телефон">
                         <button class="btn btn-yellow form_btn col-12">Узнать стоимость</button>
                         <div class="form-help">
                             <p class="text">или перезвоните нам сами по телефону:<br><a href="tel:+74954225131" class="phone">+7 (495) 42-251-31</a></p>
@@ -284,14 +430,12 @@
     </div>
   </div>
     <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
-    <script src="js/popper.min.js"></script>
+    <!-- <script src="js/popper.min.js"></script> -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
 </body>
 </html>

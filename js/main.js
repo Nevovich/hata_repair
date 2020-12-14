@@ -25,4 +25,13 @@ $(function(){
             }
         }
     });
-});
+    // Определение ширины экрана
+    let screenWidth = window.innerWidth;
+    if (screenWidth < 768) {
+        // если экран меньше 767
+      } else {
+        new WOW().init();
+      };
+    //   Phone-input validate
+      $(".phone-validate").mask("+7 (999) 999-99-99");
+    });
