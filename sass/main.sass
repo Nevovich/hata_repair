@@ -188,44 +188,56 @@ header
         height: 260px
         background: url(../img/sales/bathroom.jpg) center center
         background-repeat: no-repeat
+        background-size: cover
         &:hover
             background: linear-gradient( 0deg, $orange 0%, rgba(255,255,255,0) 100%), url(../img/sales/bathroom.jpg) center center
             background-repeat: no-repeat
+            background-size: cover
     &-bed
         height: 260px
         background: url(../img/sales/bedroom.jpg) center center
         background-repeat: no-repeat
+        background-size: cover
         &:hover
             background: linear-gradient( 0deg, $orange 0%, rgba(255,255,255,0) 100%), url(../img/sales/bedroom.jpg) center center
             background-repeat: no-repeat
+            background-size: cover
     &-office
         height: 260px
         background: url(../img/sales/office.jpg) center center
         background-repeat: no-repeat
+        background-size: cover
         &:hover
             background: linear-gradient( 0deg, $orange 0%, rgba(255,255,255,0) 100%), url(../img/sales/office.jpg) center center
             background-repeat: no-repeat
+            background-size: cover
     &-new-build
         height: 260px
         background: url(../img/sales/new-build.jpg) center center
         background-repeat: no-repeat
+        background-size: cover
         &:hover
             background: linear-gradient( 0deg, $orange 0%, rgba(255,255,255,0) 100%), url(../img/sales/new-build.jpg) center center
             background-repeat: no-repeat
+            background-size: cover
     &-kitchen
         height: 260px
         background: url(../img/sales/kitchen.jpg) center center
         background-repeat: no-repeat
+        background-size: cover
         &:hover
             background: linear-gradient( 0deg, $orange 0%, rgba(255,255,255,0) 100%), url(../img/sales/kitchen.jpg) center center
             background-repeat: no-repeat
+            background-size: cover
     &-mansarda
         height: 260px
         background: url(../img/sales/mansarda.jpg) center center
         background-repeat: no-repeat
+        background-size: cover
         &:hover
             background: linear-gradient( 0deg, $orange 0%, rgba(255,255,255,0) 100%), url(../img/sales/mansarda.jpg) center center
             background-repeat: no-repeat
+            background-size: cover
 .steps
     &__row
         margin-top: 65px
@@ -322,10 +334,27 @@ header
             display: table !important
             border: 2px solid $black
             padding: 4px 10px
-.input-error-msg
-    display: block
-    font-size: 16px
-
+.footer
+    &-title
+        font-size: 18px
+.contact
+    background-color: white
+    max-width: 300px
+    width: 88%
+    padding: 60px 0
+    &-block
+    &-list
+        &__item
+            display: flex
+            margin-left: 5px
+            margin-top: 40px
+            & img
+                align-self: flex-start
+                margin-top: 5px
+                width: 20px
+                height: 20px
+        &__text
+            margin-left: 15px
 
 
 
@@ -365,7 +394,10 @@ header
         font-weight: bold
         display: inline-block;
         width: 1em
-        margin-left: -1em     
+        margin-left: -1em  
+    &__text
+        font-size: 20px
+        margin-top: 20px   
 .features
     &-block
         margin-bottom: 50px
