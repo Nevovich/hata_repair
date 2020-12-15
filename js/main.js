@@ -1,4 +1,19 @@
 $(function(){
+        // Создание карты.
+        ymaps.ready(init);
+        function init(){
+            var myMap = new ymaps.Map("map", {
+                    center: [52.72706563, 41.45156413],
+                    zoom: 15,
+                }, {
+                    searchControlProvider: 'yandex#search'
+                });
+                // Добавляем пункт
+            myMap.geoObjects
+                .add(new ymaps.Placemark([52.72706563, 41.45156413], {}, {
+                    preset: 'islands#blueCircleDotIcon',
+                }));
+        };
     $(".owl-carousel").owlCarousel({
         margin:30,
         nav:true,
