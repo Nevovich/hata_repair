@@ -1,0 +1,18 @@
+// firefox
+body
+    scrollbar-color: $orange $back-gray
+
+
+
+::-webkit-scrollbar 
+    width: 10px
+    background-color: $back-gray
+    padding: 5px
+
+::-webkit-scrollbar-thumb 
+    background-color: $orange
+    border-radius: 9em
+    &:hover 
+        background-color: darken($orange, 10%)
+::-webkit-scrollbar-button:vertical:start:decrement, ::-webkit-scrollbar-button:vertical:end:increment 
+    display: none
