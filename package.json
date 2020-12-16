@@ -1,0 +1,28 @@
+{
+  "name": "hata_repair",
+  "version": "1.0.0",
+  "description": "Сайт по продаже ремонтных работ \r перейдите в папку /src",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nevovich/hata_repair.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nevovich/hata_repair/issues"
+  },
+  "homepage": "https://github.com/Nevovich/hata_repair#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-tinypng-compress": "^1.2.5",
+    "gulp-uglify": "^3.0.2",
+    "uglify-js": "^3.12.1"
+  }
+}
